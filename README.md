@@ -18,9 +18,6 @@ npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
 - Instale a extensão **Live Server** no VS Code.
 - Abra o arquivo **"index.html"** com o Live Server.
 
-- Instale a extensão **Live Server** no VS Code.
-- Abra o arquivo **"index.html"** com o Live Server.
-
 ### Métodos para abrir o Live Server:
 
 1. **Primeira opção:** Pressione `ALT + L` e `ALT + O`.
@@ -60,7 +57,7 @@ Baixar os arquivos do Git.
 git clone -b <branch_name> <repository_url> .
 ```
 
-Alterar o Usuário Globalmente (para todos os repositórios).
+Alterar o usuário globalmente "--global" (para todos os repositórios) ou alterar o usuário apenas para um repositório "--local".
 ```
 git config --global user.name "SeuNomeDeUsuario"
 git config --global user.email "seuemail@exemplo.com"
@@ -101,4 +98,4 @@ Este projeto foi desenvolvido por [Felipe Paraizo](https://github.com/Fparaiz0) 
 
 ## Licença
 
-Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE.txt) para mais detalhes.
