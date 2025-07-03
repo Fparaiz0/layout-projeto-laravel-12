@@ -10,41 +10,41 @@
 
 </head>
 
-<body class="bg-gradient-to-r from-blue-950 to-blue-900 min-h-screen flex flex-col justify-center items-center">
+<body class="bg-login">
 
-    <div class="mt-6 w-full overflow-hidden bg-white px-6 py-4 shadow-md sm:max-w-md sm:rounded-lg">
-        <div class="flex justify-center mb-4">
+    <div class="card-login">
+        <div class="logo-wrapper-login">
             <a href="/">
-                <img src="../../public/logo-define-500x500_v3.png" alt="Logo" class="h-20 w-20">
+                <img src="../../public/logo-define-500x500_v3.png" alt="Logo" class="logo-login">
             </a>
         </div>
 
-        <h1 class="text-2xl font-bold text-center text-blue-500">Novo Usuário</h1>
+        <h1 class="title-login">Novo Usuário</h1>
 
         <form action="#" method="POST" class="mt-4">
 
             <!-- Campo nome -->
-            <div class="mt-4">
-                <label for="name" class="block text-sm font-medium text-gray-700">Nome</label>
-                <input type="text" name="name" id="name" placeholder="Nome completo" class="mt-1 block w-full rounded-md border-2 border-blue-100 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:outline-none px-3 py-2"> 
+            <div class="form-group-login">
+                <label for="name" class="form-label-login">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Nome completo" class="form-input-login"> 
             </div>
 
             <!-- Campo e-mail -->
-            <div class="mt-4">
-                <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="Melhor e-mail" class="mt-1 block w-full rounded-md border-2 border-blue-100 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:outline-none px-3 py-2"> 
+            <div class="form-group-login">
+                <label for="email" class="form-label-login">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Melhor e-mail" class="form-input-login"> 
             </div>
 
             <!-- Campo senha -->
-            <div class="mt-4">
-                <label for="password" class="block text-sm font-medium text-gray-700">Senha</label>
-                <input type="password" name="password" id="password" placeholder="Digite a senha" class="mt-1 block w-full rounded-md border-2 border-blue-100 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:outline-none px-3 py-2"> 
+            <div class="form-group-login">
+                <label for="password" class="form-label-login">Senha</label>
+                <input type="password" name="password" id="password" placeholder="Digite a senha" class="form-input-login"> 
             </div>
 
             <!-- Link para página de login e botão cadastrar novo usuário -->
-            <div class="mt-4 flex items-center justify-between">
-                <a href="../index.html" class="text-ms text-blue-600 hover:no-underline">Login</a>
-                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded focus:outline-none cursor-pointer">Cadastrar</button>
+            <div class="btn-group-login">
+                <a href="../index.html" class="link-login">Login</a>
+                <button type="submit" class="btn-primary">Cadastrar</button>
             </div>
 
         </form>
