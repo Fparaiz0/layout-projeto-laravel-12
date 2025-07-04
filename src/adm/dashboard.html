@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
+
+    <title>Projeto</title>
+
+</head>
+
+<body class="bg-dashboard">
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <button id="toggleSidebar" class="menu-button">
+                <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>    
+            </button>
+            <div class="user-container">
+                <div class="relative">
+
+                    <!-- Dropdown -->
+                     <button id="userDropdownButton" class="dropdown-button">
+                        Usuário
+                        <svg class="ml-2 h-4 w-4" xmls="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                     </button>
+
+                     <!-- Conteúdo do Dropdown -->
+                     <div id="dropdownContent" class="dropdown-content hidden">
+                        <a href="#" class="dropdown-item">Perfil</a>
+                        <a href="#" class="dropdown-item">Sair</a> 
+                     </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <h1>Dashboard</h1>
+
+    <!-- Script para abrir/fechar o dropdown -->
+    <script>
+        const dropdownButton = document.getElementById('userDropdownButton'); 
+        const dropdownContent = document.getElementById('dropdownContent');
+
+        dropdownButton.addEventListener('click', function(){
+            const isOpen = dropdownContent.classList.contains('hidden');
+            if(isOpen){
+                dropdownContent.classList.remove('hidden'); 
+            }else{ 
+                dropdownContent.classList.add('hidden'); 
+            }
+        }); 
+
+        // Fechar o dropdown se clicar fora dele 
+        window.addEventListener('click', function(event){
+            if(!dropdownButton.contains(event.target) && !dropdownContent.contains(event.tar)){
+                dropdownContent.classList.add('hidden'); 
+            }
+        }); 
+    </script>
+
+</body>
+
+</html>

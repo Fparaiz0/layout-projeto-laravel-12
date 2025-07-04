@@ -45,4 +45,36 @@
     .btn-primary{
         @apply bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded focus:outline-none cursor-pointer; 
     }
+
+    .bg-dashboard{
+        @apply bg-gray-100;
+    }
+
+    .navbar{
+        @apply bg-blue-900 border-b border-gray-200 px-4 py-2 sm:px-6 lg:px-8; 
+    }
+
+    .navbar-container{
+        @apply flex justify-end items-center;
+    }
+
+    .menu-button{
+        @apply text-gray-50 sm:hidden; 
+    }
+
+    .user-container{
+        @apply ml-auto flex items-center space-x-4; 
+    }
+
+    .dropdown-button{
+        @apply bg-blue-900 px-3 py-2 text-sm text-gray-50 flex items-center cursor-pointer; 
+    }
+
+    .dropdown-content{
+        @apply absolute right-0 z-50 mt-2 rounded-md shadow-lg bg-white w-48; 
+    }
+
+    .dropdown-item{
+        @apply block w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none;
+    }
 }
