@@ -43,7 +43,30 @@
         </div>
     </nav>
 
-    <h1>Dashboard</h1>
+    <div class="flex">
+
+        <!-- Sidebar -->
+        <aside id="sidebar" class="sidebar">
+            <div class="sidebar-container">
+                <button id="closeSidebar" class="sidebar-close-button">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+                <div class="sidebar-header">
+                    <span class="sidebar-title">Projeto</span>
+                </div>
+                <nav class="sidebar-nav">
+                    <a href="dashboard.html" class="sidebar-link">Dashboard</a>
+                    <a href="#" class="sidebar-link">Usuários</a>
+                    <a href="#" class="sidebar-link">Sair</a>
+                </nav>
+            </div>
+        </aside>
+        
+        <h1>Dashboard</h1>
+    
+    </div>
 
     <!-- Script para abrir/fechar o dropdown -->
     <script>
@@ -66,6 +89,17 @@
             }
         }); 
     </script>
+
+    <!-- Apresentar e ocultar sidebar -->
+     <script>
+        document.getElementById('toggleSidebar').addEventListener('click', function (){
+            document.getElementById('sidebar').classList.toggle('sidebar-open'); 
+        });
+
+        document.getElementById('closeSidebar').addEventListener('click', function (){
+            document.getElementById('sidebar').classList.remove('sidebar-open'); 
+        }); 
+     </script>
 
 </body>
 
